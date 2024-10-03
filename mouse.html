@@ -13,8 +13,8 @@
 
     <link rel = "stylesheet" type = "text / css" href = "/ style.css">
     <link rel = "icono de acceso directo" href = "/ favicon.ico">
-    <!--<script src="comunicacionExternaJs.js"></script> -->
- 
+    <script src="js/eventos.js"></script>
+   
 
   </head>
 
@@ -28,7 +28,27 @@
 
       <p> Aquí hay una foto de Lucky: </p>
 
-      <img src = "lucky.bmp" alt = "Lucky">
+      <img id="foto" src = "lucky.bmp" alt = "Lucky">
+      <a href="index.html"> Volver </a>
+      <button id="b1">Botón</button>
+      <!-->
+      <script>
+            'use strict';
+            console.log("Atrapamos evento de onclick en foto");
+
+            function minimizar(){
+                const f = document.getElementById("foto");
+                //f.innerHTML="Camba";
+                f.style.height="35px";
+                f.style.width="35px";
+                //f.style.backgroundColor="Red";
+            };
+
+            var xa=document.getElementById("foto");//addEventListener("click",minimizar,true);
+            var xafoto=document.getElementById("b1").addEventListener("click",minimizar,false);
+            xa.addEventListener ("mouseover" , minimizar , false);
+      </script>
+      -->
 
     </div>
 
