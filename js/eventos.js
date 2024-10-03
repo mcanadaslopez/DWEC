@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //f.style.height="15px";
         //f.style.width="15px";
         //f.style.backgroundColor="Red";
+        document.write("<h2>Vamos</h2>");
     };
 
     var xa=document.getElementById("foto");//addEventListener("click",minimizar,true);
